@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections</title>
+    <!--Google style sheet for font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Young+Serif&display=swap" rel="stylesheet">
+    <!--My style sheet-->
+    <link rel="stylesheet" href="style.css">
+    <!--Fontawesome CDN link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--Tailwind CSS CDN link-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    
+</head>
+<body>
+    
+    <!--Responsive NavBar-->
+    <nav class="p-3 bg-blue-700 flex items-center justify-between shadow-xl sticky top-0 z-10">
+      <h1 class="text-2xl font-bold">Local Mart</h1>
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4 w-6 h-6 md:hidden" >
+        <path fill-rule="evenodd" d="M2 3.75A.75.75 0 0 1 2.75 3h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 3.75ZM2 8a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 8Zm0 4.25a.75.75 0 0 1 .75-.75h10.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd" />
+      </svg>
+
+        <!-- <h3>Menu</h3> -->
+      <ul class="flex gap-5 text-black-600 hidden md:flex">
+        <li>
+          <a class="hover:underline hover:text-blue-300" href="./index.html">Home</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-blue-300" href="./collections.html">Collections</a>
+        </li>
+        <li>
+          <a class="hover:underline hover:text-blue-300" href="./contact.html">Contact</a>
+        </li>
+        <li>
+            <i class="fa-duotone fa-solid fa-cart-arrow-down"></i>
+        </li>
+      </ul>
+    </nav>
+
+    <!--Collections-->
+    <div class="collections p-4">
+        <h1 class="text-3xl font-bold text-center">Our Products</h1>
+        <div class="flex items-center justify-center">
+        <div class="text-center p-2 m-2">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="p-2" placeholder="Search for anything here">
+        </div>
+        <label class="font-bold hidden sm:block" for="category">Choose a category : </label>
+        <select class="px-2 mx-2 border border-gray-300" id="category" name="category">
+            <option value="home_pdts">Home Products</option>
+            <option value="dress">Dresses</option>
+            <option value="mobile">Mobiles</option>
+            <option value="food">Food Products</option>
+        </select>
+        </div>
+    </div>
+
+    <div class="card-container">
+            <div>
+                <img src="./dress1.jpg" alt="">
+                <p>Avasa Dress for women</p>
+                <p>Blue dress for casual</p>
+                <p>1449 <del>2999</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        
+            <div>
+                <img src="./dress2.jpg" alt="">
+                <p>clax dresses for women</p>
+                <p>Black dress for office</p>
+                <p>449 <del>999</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        
+            <div>
+                <img src="./food1.jpg" alt="">
+                <p>Maggie instant Noodeles</p>
+                <p>Classic flavor</p>
+                <p>74 <del>199</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        
+            <div>
+                <img src="./food2.jpg" alt="">
+                <p>Lays Potato chips</p>
+                <p>Classic Flavour</p>
+                <p>89 <del>199</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div>
+                <img src="./fridge.jpg" alt="">
+                <p>Godrej 325l Refridgerator</p>
+                <p>325 L 5 star</p>
+                <p>14449 <del>29999</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        
+            <div>
+                <img src="./grinder.jpg" alt="">
+                <p>Ultra 2L Mixer Grinder</p>
+                <p>2L 5star</p>
+                <p>4499 <del>9999</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div>
+                <img src="./mobile.jpg" alt="">
+                <p>Vivo v21 512 mb</p>
+                <p>Cyan bue</p>
+                <p>144999 <del>299999</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        
+            <div>
+                <img src="./mobile1.jpg" alt="">
+                <p>Samsung s24 pro</p>
+                <p>Purple 218mb</p>
+                <p>14449 <del>19999</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <!---->
+            <div>
+                <img src="./dress3.jpg" alt="">
+                <p>Black Satin tops</p>
+                <p>Crux brand</p>
+                <p>1449 <del>2999</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        
+            <div>
+                <img src="./dress4.jpg" alt="">
+                <p>White muslin top</p>
+                <p>Luie brand</p>
+                <p>1449 <del>1999</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        
+            <div>
+                <img src="./food3.jpg" alt="">
+                <p>Lays Potato chips</p>
+                <p>Onion cream flavor</p>
+                <p>74 <del>199</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        
+            <div>
+                <img src="./food4.jpg" alt="">
+                <p>Lays Wavy potato chips</p>
+                <p>Classic flavour</p>
+                <p>89 <del>199</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <div>
+                <img src="./juicer.jpg" alt="">
+                <p>Zanibio fruit juicer</p>
+                <p>Plastic</p>
+                <p>1449 <del>2999</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        
+            <div>
+                <img src="./mixie.jpg" alt="">
+                <p>Greenchef Mixer/Blender</p>
+                <p>3 Jar</p>
+                <p>1449 <del>1999</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                
+            </div>
+            <div>
+                <img src="./mobile2.jpg" alt="">
+                <p>Iphone 16 Pro</p>
+                <p>512 mb 256 gb</p>
+                <p>19999 <del>29999</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                
+            </div>
+        
+            <div>
+                <img src="./mobile3.jpg" alt="">
+                <p>IPhone 11 pro</p>
+                <p>512 mb 256 gb</p>
+                <p>14449 <del>19999</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <!---->
+            <div>
+                <img src="./dress5.jpg" alt="">
+                <p>Girls yellow frock</p>
+                <p>Avasa Brand</p>
+                <p>1449 <del>2999</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        
+            <div>
+                <img src="./dress6.jpg" alt="">
+                <p>Girls Peach Frock</p>
+                <p>Crux brand</p>
+                <p>749 <del>999</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+            <!---->
+            <div>
+                <img src="./stove.jpg" alt="">
+                <p>Vidiem 3 burner stove</p>
+                <p>3 Burner</p>
+                <p>2449 <del>3999</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        
+            <div>
+                <img src="./dress7.jpg" alt="">
+                <p>Boys winter suite</p>
+                <p>Ownd brand</p>
+                <p>1449 <del>1999</del></p>
+                <i class="fa-solid fa-bag-shopping"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <section class="bg-blue-700 flex flex-col gap-5 p-2 mt-5">
+      <h1 class="text-2xl font-bold">Local Mart</h1>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Blanditiis consequatur nam aut doloribus corporis. Nostrum ut ex eos illo impedit aliquid maxime veniam error dignissimos ullam, voluptatem, doloremque deserunt esse nobis optio voluptatum quos totam ad voluptatibus, eveniet labore facilis tempora. Quis mollitia assumenda tempora exercitationem? Sed rerum doloremque officia!</p>
+      <p class="">&copy; 2025 www.localmart.com</p>
+    </section>
+
+</body>
+
+<script src="script.js"></script>
+
+</html>
